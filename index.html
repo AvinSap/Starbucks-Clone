@@ -1,62 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Starbucks</title>
-    <link rel="stylesheet" href="style.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body>
-
-<!-- NAV BAR -->
- <nav class=" mb-4 p-10 pb-0 pt-3 border border-white shadow-lg ">
-<div class="px-10 flex items-center">
-    
-      <img class="h-12" src="img/StarQueen.png" alt="logo"/>
-        <ul class="flex space-x-4 list-none pl-8   ">
-            <li class="font-bold"><a href="menu.html">MENU</a></li>
-            <li class="font-bold"><a href="rewards.html">REWARDS</a></li>
-            <li class="font-bold"><a href="giftcard.html">GIFT CARDS</a></li>
-            
+  </head>
+  <body>
+    <!-- NAV BAR -->
+    <nav class="mb-4 px-10 border border-white shadow-lg">
+      <div class="flex flex-wrap items-center">
+        <img class="h-12" src="img/StarQueen.png" alt="logo" />
+        <ul class="flex space-x-4 list-none pl-8">
+          <li class="font-bold"><a href="menu.html">MENU</a></li>
+          <li class="font-bold"><a href="rewards.html">REWARDS</a></li>
+          <li class="font-bold"><a href="giftcard.html">GIFT CARDS</a></li>
         </ul>
-        <div class=" ml-auto px-10 flex flex-row space-x-2 pl-0" >
-            <ul class="pl-0 list-none items-center p-10 ">
-            <li class="list-none font-semibold mr-0"><a href="location.html">Find a store</a></li>
-        </ul>
-        <div class="px-10 pl-0 flex items-center  ">
-            <button class=" mr-2 bg-transparent font-semibold hover:text-black py-2 px-3 text-black-700 border border-blue-500 hover:border-transparent hover:bg-black rounded-full">
-            Sign in
+        <div class="ml-auto flex flex-wrap items-center space-x-2">
+          <ul class="list-none p-0">
+            <li class="font-semibold">
+              <a href="location.html">Find a store</a>
+            </li>
+          </ul>
+          <div class="flex items-center space-x-2">
+            <button
+              class="bg-transparent font-semibold hover:text-black py-2 px-3 border border-blue-500 hover:border-transparent hover:bg-black rounded-full"
+            >
+              Sign in
             </button>
-    
-            <button class="bg-transparent text-black-700 font-semibold hover:bg-black hover:text-black py-2 px-4 border border-blue-500 hover:border-transparent rounded-full">
-            Join now
+            <button
+              class="bg-transparent font-semibold hover:bg-black hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded-full"
+            >
+              Join now
             </button>
+          </div>
         </div>
-        
-    </div>
-</div>
+      </div>
     </nav>
 
-    
-<!-- HOME PAGE -->
-  <section>
-    <div class="mx-auto px-[10rem] h-screen ml-10 mr-10">
-        <div class=" w-full h-full align-center">
-            
-            <div class=" flex bg-[#32462f] mx-auto">
-                <p class="h-full w-full text-white text-4xl justify-center text-center">The Spring Edit</p>
-                <img class=" flex justify-right items-right h-[40rem] w-1/2" src="img/box1.png" alt="Special-Drinks">
+    <!-- HOME PAGE -->
+    <section>
+      <div class="mx-auto px-10 h-screen ml-10 mr-10">
+        <div class="w-full h-full">
+          <div
+            class="flex flex-col md:flex-row justify-between bg-[#32462f] p-4 md:p-10 rounded-lg"
+          >
+            <div
+              class="flex flex-col justify-center items-center md:items-start text-white md:w-1/2"
+            >
+              <h2 class="text-2xl font-bold mb-4">See You On the Patio</h2>
+              <p class="text-lg">
+                Soak up the season with Summer-Berry Refreshers and new Iced
+                Horchata Oatmilk Shaken Espresso. Fresh picks and returning
+                favorites are iced and ready.
+              </p>
             </div>
+            <img
+              class="w-full md:w-1/2 mt-4 md:mt-0 object-cover rounded-lg"
+              src="img/summer.png"
+              alt="Special-Drinks"
+            />
+          </div>
 
-       
-        <div class="mt-5 justify-center items-center bg-[#5f4633] mx-auto">
-            
-            <img class="h-[20rem] w-1/2 " src="img/box2.jpg" alt="Special-Drinks">
-            <div class="text flex flex-col md:flex-row text-center w-full h-full align-center">
-                <h1 class="text-black h-full"></h1>
-
+          <div
+            class="mt-5 bg-[#5f4633] p-4 rounded-lg flex flex-col md:flex-row items-center"
+          >
+            <img
+              class="h-[20rem] w-full md:w-1/2 object-cover rounded-lg"
+              src="img/box2.jpg"
+              alt="Special-Drinks"
+            />
+            <div class="text-center md:text-left md:pl-5 mt-3 md:mt-0 w-full">
+              <h1 class="text-black text-2xl font-bold">Your Text Here</h1>
             </div>
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
+  </body>
+</html>
